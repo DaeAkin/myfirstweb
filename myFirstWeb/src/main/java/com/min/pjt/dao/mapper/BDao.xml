@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.min.pjt.dao.BDao">
+	<select id="list" resultType="com.min.pjt.dto.BDto">
+		select num,title,content,writer,nickname,date,hit,groups,step,indent from freeboard order by groups desc,step asc
+	</select>
+	
+	<!-- 홈에서 리스트가져올때 -->
+	
+	<select id="boardlist" resultType="com.min.pjt.dto.BDto">
+		select num,title,content,writer,date,hit,groups,step,indent from freeboard order by groups desc,step asc limit 5
+	</select>
+	
+	<insert id="write" >
+	
+	insert into freeboard (title,content,writer,nickname,groups) values (#{param1},#{param2},#{param3},(select (nickname) from member where id=#{param3} ),(select * from (select max(num)+1 from freeboard) next))
+	</insert>
+	
+	
+	<delete id="delete">
+	delete from freeboard where num = #{num}
+	
+	</delete>
+	
+	<select id="content_view" resultType="com.min.pjt.dto.BDto">
+		select num,title,writer,date,hit,content from freeboard where num = #{num}
+		
+	</select>
+	
+	<select id="content_replyview" resultType="com.min.pjt.dto.FreeboardReplyDto">
+		select replynum,groups,indent,step,replycontent,datetime,agreement,opposition from freeboardreply where num = #{num} order by groups desc,step asc
+	</select>
+	
+	<select id="modify_view" resultType="com.min.pjt.dto.BDto">
+		select num,title,content from freeboard where num=#{num}
+	</select>
+	
+	<update id="modify">
+	
+	update freeboard set title = #{param1}, content = #{param2} where num = #{param3}
+	</update>
+	
+	<insert id="reply">
+	
+	insert into freeboardreply (replycontent,num,groups) values (#{param1},#{param2},(select * from (select max(replynum)+1 from freeboardreply) next))
+	</insert>
+	
+	<update id="hit">
+	update freeboard set hit = hit+1 where num = #{param1}
+	</update>
+	
+	<select id="login" resultType="com.min.pjt.member.Mdto.Mdto">
+	select number,nickname,id,password,passwordQue,passwordAn,email,emailCheck from member where id = #{param1}
+	</select>
+	
+	<insert id="join">
+	insert into member (nickname,id,password,passwordQue,passwordAn,email,emailCheck) values (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7})
+	</insert>
+	 
+ 	
+	
+	
+</mapper>

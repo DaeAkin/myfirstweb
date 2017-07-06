@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            
+            
+        }
+        
+        #container {
+            width:  1500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        
+           /* 메뉴1 */
+        .ui1 {
+            text-align: center;
+        }
+        
+        .ui1 ul li {
+            display: inline-block;
+            width: auto;
+          
+
+        }
+        
+        
+        /* 메뉴 2 */
+        
+        .ui2 {
+            
+        
+           
+        }
+        .ui2 ul{
+            color: white;
+            background: #6c6c6c;
+     
+            line-height: 50px;
+            text-align: center;
+   
+        }
+        
+        .ui2 ul li{
+            margin-right: 30px;
+            display: inline-block;
+           height: 50px;
+            
+
+        }
+        
+        .ui2 ul li a:link {
+            text-decoration: none;
+            color: white;
+           
+        }
+        
+        .ui2 ul li a:visited {
+            text-decoration: none;
+            color: white;
+      
+            
+        }
+        
+        .ui2 ul li:hover {
+            background: #c5c5c5;
+        }
+        .ui2 ul li a:active {
+            text-decoration: none;
+        }
+        
+        /* 메뉴 2 끝  */
+        
+        /* 메뉴 2 B 시작 */
+        
+        
+              .ui2 ul li ul  {
+            display: none;
+        }
+        
+          .ui2 ul li:hover ul  {
+            display:grid;
+            position: absolute;
+        }
+        /* 메뉴 2 B 끝 */
+        
+        
+        	#contents {
+			width: 1150px;  /* 너비 */
+			padding: 20px;  /* 패딩 */
+			float: right;  /* 왼쪽으로 플로팅 */
+			margin-bottom: 20px;  /* 아래 요소와의 간격 */
+		}
+		#sidebar {
+			width: 220px;  /* 너비 */
+			padding: 20px;  /* 패딩 */
+			float: left;  /* 오른쪽으로 플로팅 */
+			margin-bottom: 20px;  /* 아래 요소와의 간격 */
+			background:#eee;
+		}
+        
+        .box {
+            display: inline-block;
+            width: 700px;
+        }
+        
+        .box1{
+            
+            display: inline-block;
+            margin-bottom: 5%;
+        
+        }
+        
+        	#footer {
+			clear:both;  /* 양쪽 플로팅 해제 */
+			padding:20px;  /* 패딩 */
+            margin: 0 0 0 15%;
+           
+		}
+        
+    
+    
+        #footer td {
+            text-align: left;
+            border-right: 1px solid black;
+            padding: 0 10px 0 0;
+            clear: both;
+            
+            
+        }
+        
+         .adImg {
+           width: 200px;
+            height: 100px;
+            margin-bottom: 5%;
+                
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        
+        <div class="ui1">
+    <ul>
+       
+        <li><textarea></textarea><input type="button" value="검색"></li>
+    
+    </ul>
+    </div>
+    
+    <div class="ui2">
+    <ul>
+        <li><a href="#">상호 이름</a></li>
+        <li><a href="#">링크1</a>
+        <ul>
+            <li>링크1</li>
+             <li>링크1</li>
+        </ul>
+        </li>
+        <li><a href="#">링크1</a></li>
+        <li><a href="#">자유게시판</a></li>
+        <li><a href="#">링크1</a></li>
+        <li><a href="#">링크1</a></li>
+        <li><a href="#">링크1</a></li>
+        <li><a href="#">링크1</a></li>
+        <li><a href="#">링크1</a></li>
+      
+        
+    </ul>
+        
+    </div>
+    
+ 
+        
+    <div id="sidebar">
+        
+        <div class="loginform" >
+        <fieldset>
+        <form name="loginform">
+            <p>회원 로그인</p>
+        
+    <label>아이디: <input type="text" id="user_id" size="10"></label><br>
+    <label>비밀번호: <input type="password" id="user_pw" size="10"></label><br>
+    <input type="submit" value="회원가입">
+    <input type="submit" value="로그인">
+            </form>
+            </fieldset>
+        
+        안녕하세요 반갑습니다
+        동현이의 새로운 웹페이지에 오신것을 환영합니다.
+
+    </div>
+    
+    </div>
+        
+    <div id="contents">
+        
+         <div class="box">
+            <p>공지사항</p>
+            <p>2017-05-23</p>
+            <hr>
+            
+            <p>이낙연 총리 후보는 24일 ssssss국회 청문회에서 "(언론인 해직 사태에 대해) 살아남은 자의 부채가 평생 따라다니고 있다"고 말했다. 
+
+김광수 국민의당 의원은 이 총리 후보에게 "(이 총리 후보가) 동아일보 기자로 재직하던 시절 역사성과 시대정신이 없다는 비판을 받고 있다"며 "신군부에 의한 해직 언론인 사태를 어떻게 해결할 수 있나"라고 질문했다.  r고맙습니다.
+            <hr>
+
+        </div>
+   
+    <img src="%EA%B4%91%EA%B3%A0%EC%98%81%EC%97%AD.png" class="adImg">
+        
+
+   
+        <div class="">
+        <span>인기 게시물</span>
+        <span>더보기</span>
+            <table >
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                 
+            </table>
+            
+        </div>
+        
+           <span class="box1">
+        <span>게시글 이름 </span>
+        <span>더보기</span>
+            <table >
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                 
+            </table>
+            
+        </span>
+        
+        
+        
+        <span class="box1">
+        <span>게시글 이름</span>
+        <span>더보기</span>
+            <table >
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                 
+            </table>
+            
+        </span>
+        <span class="box1">
+        <span>게시글 이름</span>
+        <span>더보기</span>
+            <table >
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                <tr>
+                <td>[5/24][카테고리 이름] 불라불라불라불라불라</td>
+                </tr>
+                 
+            </table>
+            
+        </span>
+       
+
+        
+        
+
+        </div>
+        
+        
+        
+        
+    <div id="footer">
+        
+         <table>
+    <tr>
+        <td>Priacy Plicy</td>
+        <td>Acceptable Use Policy(AUP)</td>
+        <td>Terms of Service</td>
+    </tr>
+    </table>
+        
+        <p>Donghyeon Community #64 pademba, Rd, upper Waterllo Strret, freetown, sierra leone</p>
+        <p>Copyrigts and trademarks for the manga, and other promotion sadsaffgnei asdasdwr asdas we asdasd qw</p>
+        <p>© Copyright 2016 Donghyeon.in All rights reserved.</p>
+        
+    
+    </div>
+        </div>
+
+
+</body>
+</html>

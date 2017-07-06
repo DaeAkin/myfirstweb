@@ -1,0 +1,21 @@
+﻿ #joinform {
+            width: 100%;
+            
+        }
+        
+        #joinform td{
+            border-top: 1px solid black;
+        }
+        
+        #joinform #lastone td {
+            border-bottom: 1px solid black;
+        }
+        
+        #joinform {
+            margin: 50px 0;
+            
+        }
+        
+        #contents p {
+            font-size: 12px;
+        }

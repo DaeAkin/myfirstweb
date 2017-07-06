@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+ 
+        
+        #container {
+            width:  1500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        
+           /* 메뉴1 */
+        .ui1 {
+            text-align: center;
+        }
+        
+        .ui1 ul li {
+            display: inline-block;
+            width: auto;
+          
+
+        }
+        
+        
+        /* 메뉴 2 */
+        
+        .ui2 {
+            
+        
+           
+        }
+        .ui2 ul{
+            color: white;
+            background: #6c6c6c;
+     
+            line-height: 50px;
+            text-align: center;
+   
+        }
+        
+        .ui2 ul li{
+            margin-right: 30px;
+            display: inline-block;
+           height: 50px;
+            
+
+        }
+        
+        .ui2 ul li a:link {
+            text-decoration: none;
+            color: white;
+           
+        }
+        
+        .ui2 ul li a:visited {
+            text-decoration: none;
+            color: white;
+      
+            
+        }
+        
+        .ui2 ul li:hover {
+            background: #c5c5c5;
+        }
+        .ui2 ul li a:active {
+            text-decoration: none;
+        }
+        
+        /* 메뉴 2 끝  */
+        
+        /* 메뉴 2 B 시작 */
+        
+        
+              .ui2 ul li ul  {
+            display: none;
+        }
+        
+          .ui2 ul li:hover ul  {
+            display:grid;
+            position: absolute;
+        }
+        /* 메뉴 2 B 끝 */
+        
+        
+        	#contents {
+			width: 1150px;  /* 너비 */
+			padding: 20px;  /* 패딩 */
+			float: right;  /* 왼쪽으로 플로팅 */
+			margin-bottom: 20px;  /* 아래 요소와의 간격 */
+		}
+		#sidebar {
+			width: 220px;  /* 너비 */
+			padding: 20px;  /* 패딩 */
+			float: left;  /* 오른쪽으로 플로팅 */
+			margin-bottom: 20px;  /* 아래 요소와의 간격 */
+			background:#eee;
+		}
+        
+        .box {
+            display: inline-block;
+            width: 700px;
+        }
+        
+        .box1{
+            
+            display: inline-block;
+            margin-bottom: 5%;
+        
+        }
+        
+        	#footer {
+			clear:both;  /* 양쪽 플로팅 해제 */
+			padding:20px;  /* 패딩 */
+            margin: 0 0 0 15%;
+           
+		}
+        
+    
+    
+        #footer td {
+            text-align: left;
+            border-right: 1px solid black;
+            padding: 0 10px 0 0;
+            clear: both;
+            
+            
+        }
+        
+         .adImg {
+           width: 200px;
+            height: 100px;
+            margin-bottom: 5%;
+                
+            
+        }
+		
