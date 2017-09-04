@@ -17,9 +17,10 @@
 <meta charset="utf-8" />
 <title></title>
 <!-- CSS -->
-<link rel="stylesheet" href="${pageContext.request.contextPath }/css/style1.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/css/joinform.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/css/board.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/css/view.css">
 
 
 </head>
@@ -62,7 +63,6 @@
 
 
 	
-
 
 
 

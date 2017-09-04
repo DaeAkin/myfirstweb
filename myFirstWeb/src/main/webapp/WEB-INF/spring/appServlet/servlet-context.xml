@@ -20,6 +20,7 @@
 		in the /WEB-INF/views directory -->
 		
 		<context:component-scan base-package="com.min.pjt" />
+		<context:component-scan base-package="com.min.pjt.controller" />
 	<beans:bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
@@ -47,20 +48,7 @@
 		<beans:property name="dataSource" ref="dataSource" />
 	</beans:bean>
 	
- <!-- Tiles viewResolver 
- <beans:bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-  <beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView" />
-  <beans:property name="order" value="1" />
- </beans:bean>
- 
- <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
-  <beans:property name="definitions">
-   <beans:list>
-    <beans:value>/WEB-INF/spring/tiles/tiles-defs.xml</beans:value>
-   </beans:list>
-  </beans:property>
- </beans:bean>
--->
+
 <!-- css mapping -->
 <resources location="/css/" mapping="/css/**"/>
 
@@ -72,8 +60,15 @@
 	
 	<beans:bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<beans:constructor-arg index="0" ref="sqlSessionFactory"></beans:constructor-arg>
-	</beans:bean>
-	
+</beans:bean>
+
+<!-- 파일업로드 -->
+<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	<beans:property name="maxUploadSize" value="1000000"/>
+
+</beans:bean>
+
+
 
 
 

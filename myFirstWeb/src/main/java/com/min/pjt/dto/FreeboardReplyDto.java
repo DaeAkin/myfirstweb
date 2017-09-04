@@ -27,6 +27,7 @@ public class FreeboardReplyDto {
 		this.groups=groups;
 		this.indent=indent;
 		this.step=step;
+		
 		this.replycontent=replycontent;
 		this.datetime=datetime;
 		this.agreement=agreement;

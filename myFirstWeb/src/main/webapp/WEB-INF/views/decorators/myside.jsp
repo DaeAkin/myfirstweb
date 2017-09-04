@@ -16,24 +16,24 @@
        
  
         <fieldset>
-  <form name="login" method="post" action="login">
+ 
             <p>회원 로그인</p>
       
        
       <%if(session.getAttribute("DBID") != null)  {%>
-      <p><%=session.getAttribute("DBID") %>님 환영합니다.</p>
+      <p><%=session.getAttribute("DBNick") %>님 환영합니다.</p>
       <input type="button" value="로그아웃" onclick="location.href='${pageContext.request.contextPath}/logout'"/>
       <%}else{ %>
-       
-    <label>아이디: <input type="text" name="user_id" id="user_id" size="10"></label><br>
+    <form name="login" method="post" action="login">
+    <label>아이디 : &nbsp; <input type="text" name="user_id" id="user_id" size="10"></label><br>
     <label>비밀번호: <input type="password" name="user_pw" id="user_pw" size="10"></label><br>
     
    	 <input type="button" name="joinform" value="회원가입" onclick="location.href='${pageContext.request.contextPath }/joinform'">
    	 
     
-    <input type="button" value="로그인" onclick="location.href='${pageContext.request.contextPath }/login'">
-   <%} %>
+    <input type="submit" value="로그인">
     </form>
+   <%} %>
     
        
             </fieldset>

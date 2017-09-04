@@ -44,4 +44,16 @@
 		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/webapp/css/style.css</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Desktop/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9E%90%EB%A3%8C/myPro/style1.css</locationURI>
+		</link>
+		<link>
+			<name>src/main/webapp/css/view.css</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Desktop/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9E%90%EB%A3%8C/myPro/view.css</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

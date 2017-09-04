@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
- 
+
         
         #container {
             width:  1500px;
@@ -23,14 +23,14 @@
         /* 메뉴 2 */
         
         .ui2 {
-            
+           font-size : 14px;
         
            
         }
         .ui2 ul{
             color: white;
             background: #6c6c6c;
-     
+			
             line-height: 50px;
             text-align: center;
    
@@ -39,6 +39,7 @@
         .ui2 ul li{
             margin-right: 30px;
             display: inline-block;
+			
            height: 50px;
             
 
@@ -81,35 +82,58 @@
         
         
         	#contents {
-			width: 1150px;  /* 너비 */
-			padding: 20px;  /* 패딩 */
+			width: 1250px;  /* 너비 */
+			padding-left : 30px;
 			float: right;  /* 왼쪽으로 플로팅 */
 			margin-bottom: 20px;  /* 아래 요소와의 간격 */
+	
 		}
 		#sidebar {
-			width: 220px;  /* 너비 */
+			font-size : 8pt;
+			width: 180px;  /* 너비 */
 			padding: 20px;  /* 패딩 */
 			float: left;  /* 오른쪽으로 플로팅 */
 			margin-bottom: 20px;  /* 아래 요소와의 간격 */
-			background:#eee;
+			
+		}
+
+		#sidebar input {
+			font-size : 8pt;
 		}
         
         .box {
-            display: inline-block;
+            display : block;
             width: 700px;
+			margin: 0 0  30px 0;
+		;
         }
         
         .box1{
-            
+           margin-right : 10px;
+			
             display: inline-block;
-            margin-bottom: 5%;
+            margin-bottom: 15px;
         
         }
+
+		.box1 table { 
+			 border : 0.01em solid black;
+			width :500px;
+			margin : 10px;
+		}
+
+		.box table tr  {
+			
+		}
+
+		.box1 table tr td  {
+			padding : 4px;
+		}
         
         	#footer {
 			clear:both;  /* 양쪽 플로팅 해제 */
-			padding:20px;  /* 패딩 */
-            margin: 0 0 0 15%;
+			border-top : 1px solid black;
+			padding : 30px 0 0 0;
            
 		}
         
